@@ -5,7 +5,9 @@ Author: Carlos W. Gama
 '''
 class Recomendacao:
 
+
     def __init__(self, base):
+    ''' Modelo da base: {idUnico:{idProduto:nota,...},...} '''
         self.baseUsuario = base
         if (type(self.baseUsuario) == list or type(self.baseUsuario) == tuple): self.baseUsuario = self.__converteArrayToDictionary(self.baseUsuario)
         
